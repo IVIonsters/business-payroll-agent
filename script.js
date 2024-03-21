@@ -6,14 +6,15 @@ const collectEmployees = function() {
   // Array for reuturn value
   let employeeValue = [];
   // Boolean to act as a condition for the while loop --not sure if needed revist after testing.
-}
+  let addEmployee = true;
+
 
 // Create a loop to collect user data First Name, Last Name, Salary.
   while (addEmployee) {
     // User Data Prompts
-    let firstName = prompt("Enter Employee First Name: ");
-    let lastName = prompt("Enter Employee Last Name: ");
-    let salary = prompt("Enter Employee Salary: ");
+    const firstName = prompt("Enter Employee First Name:");
+    const lastName = prompt("Enter Employee Last Name:");
+    let salary = prompt("Enter Employee Salary:");
 
     // Check for salary, if not a number warn user and default to 0.
     if (isNaN(salary)) {
@@ -34,26 +35,15 @@ const collectEmployees = function() {
 
 
     // Add Boolean to confirm prompt to add another employee.
-    addEmployee = confirm("Would you like to add another employee?");
+    addemployee = confirm("Would you like to add another employee?");
+  }
+    
 
     // Return employeevalue data
     return employeeValue;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ----------------------------------------------------------------------------------------------------
 
 // Display the average salary = TODO: Calculate and display the average salary
 const displayAverageSalary = function(employeesArray) {
@@ -64,7 +54,7 @@ const displayAverageSalary = function(employeesArray) {
 const getRandomEmployee = function(employeesArray) {
 
 }
-
+// ----------------------------------------------------------------------------------------------------
 /*
   ====================
   STARTER CODE
