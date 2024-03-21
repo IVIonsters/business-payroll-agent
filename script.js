@@ -4,7 +4,7 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data = TODO: Get user input to create and return an array of employee objects
 const collectEmployees = function() {
   // Array for reuturn value
-  let employeevalue = [];
+  let employeeValue = [];
   // Boolean to act as a condition for the while loop --not sure if needed revist after testing.
 }
 
@@ -22,12 +22,22 @@ const collectEmployees = function() {
     }
 
     // Generate Employee Variable
+    let employee = {
+      firstName: firstName,
+      lastName: lastName,
+      salary: salary
+    };
 
 
     // Add Employee to Array using push method.
+    employeeValue.push(employee);
 
 
     // Add Boolean to confirm prompt to add another employee.
+    addEmployee = confirm("Would you like to add another employee?");
+
+    // Return employeevalue data
+    return employeeValue;
 }
 
 
