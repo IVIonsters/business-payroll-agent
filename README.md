@@ -32,15 +32,16 @@ Employee payroll tracker setup with prompts for first name , last name and salar
 
 * Input employee data and track salaries across company, will automatically average the salaries and log for user. Contains random draw element adaptable to user needs.
 
-* [zachary-polof-portfolio Live](https://ivionsters.github.io/zachary-polof-portfolio/)
+* [business-payroll-agent Live](https://ivionsters.github.io/business-payroll-agent/)
 
-* [zachary-polof-portfolio Github Repo](https://github.com/IVIonsters/zachary-polof-portfolio)
+* [business-payroll-agent Github Repo](https://github.com/IVIonsters/business-payroll-agent)
 
-* ![Web Page](/assets/images/webpagescreenshot.png)
+* ![Web Page](/Assets/03-javascript-homework-demo.gif)
+* ![Web Page](/Assets/page-test.png)
 
 ## Credits
 
-* [Unsplash - images](https://unsplash.com/)
+* N/A
 
 ## License
 
