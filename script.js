@@ -5,7 +5,7 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const collectEmployees = function() {
   // Array for reuturn value
   const employeeValue = [];
-  // Boolean to act as a condition for the while loop --not sure if needed revist after testing.
+  // Boolean to act as a condition for the while loop.
   let addEmployee = true;
 
 
