@@ -10,7 +10,7 @@ const collectEmployees = function() {
 
 
 // Create a loop to collect user data First Name, Last Name, Salary.
-  while (addEmployee !== false) {
+  while (addEmployee) {
     // User Data Prompts
     const firstName = prompt("Enter Employee First Name:");
     const lastName = prompt("Enter Employee Last Name:");
@@ -18,9 +18,9 @@ const collectEmployees = function() {
 
     // Check for salary, if not a number warn user and default to 0.
     if (isNaN(salary)) {
-      alert("Please enter a valid number for salary.");
+      alert("Please enter a valid number. Salary Set to 0");
       salary = 0;
-    } else salary = parseFloat(salary);
+    } else salary = parseInt(salary);
 
     // Generate Employee Variable
     let employee = {
@@ -35,7 +35,7 @@ const collectEmployees = function() {
 
 
     // Add Boolean to confirm prompt to add another employee.
-    addemployee = confirm("Would you like to add another employee?");
+    addEmployee = confirm("Would you like to add another employee?");
   }
     
 
@@ -50,16 +50,21 @@ const displayAverageSalary = function(employeesArray) {
   // define variables of for sum and count
   let salarySum = 0;
   // create for loop to calculate salaries
-
+  for (let i = 0; i < employeesArray.length; i++) {
+    salarySum += employeesArray[i].salary;
+  }
+    // console log to dispaly average salary
+  console.log(`The average salary of our employees is: ${salarySum / employeesArray.length}`);
   // create variable to take average salary and divide by number of employees
-
-  // console log to dispaly average salary
-  
-  
+  return salarySum / employeesArray.length;
 }
 
 // Select a random employee = TODO: Select and display a random employee
 const getRandomEmployee = function(employeesArray) {
+  // create variable to select random employee
+  const employeeRandom = employeesArray[Math.floor(Math.random() * employeesArray.length)];
+  // console log to display random employee
+  console.log(`CONGRATULATIONS! ${employeeRandom.firstName} ${employeeRandom.lastName} has been selected as the random employee!`); 
 
 }
 // ----------------------------------------------------------------------------------------------------
