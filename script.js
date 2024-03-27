@@ -16,11 +16,11 @@ const collectEmployees = function() {
     const lastName = prompt("Enter Employee Last Name:");
     let salary = prompt("Enter Employee Salary:");
 
-    // Check for salary, if not a number warn user and default to 0.
+
     if (isNaN(salary)) {
-      alert("Please enter a valid number. Salary Set to 0");
-      salary = 0;
-    } else salary = parseInt(salary);
+      alert("Please enter a valid number.");
+      salary = prompt("Enter Employee Salary:");
+    } 
 
     // Generate Employee Variable
     let employee = {
