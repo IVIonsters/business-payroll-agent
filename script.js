@@ -14,12 +14,11 @@ const collectEmployees = function() {
     // User Data Prompts
     const firstName = prompt("Enter Employee First Name:");
     const lastName = prompt("Enter Employee Last Name:");
-    let salary = prompt("Enter Employee Salary:");
-
+    let salary = Number(prompt("Enter Employee Salary:"));
 
     if (isNaN(salary)) {
       alert("Please enter a valid number.");
-      salary = prompt("Enter Employee Salary:");
+      salary = Number(prompt("Enter Employee Salary:"));
     } 
 
     // Generate Employee Variable
