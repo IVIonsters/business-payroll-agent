@@ -3,7 +3,7 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data = TODO: Get user input to create and return an array of employee objects
 const collectEmployees = function() {
-  // Array for reuturn value
+  // Array for return value
   const employeeValue = [];
   // Boolean to act as a condition for the while loop.
   let addEmployee = true;
